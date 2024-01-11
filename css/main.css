@@ -1,0 +1,396 @@
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins-Bold"), local("Poppins Bold"), url("../fonts/Poppins/Poppins-Bold.eot") format("eot"), url("../fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Bold.ttf") format("ttf"), url("../fonts/Poppins/Poppins-Bold.svg") format("svg"), url("../fonts/Poppins/Poppins-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins-SemiBold"), local("Poppins SemiBold"), url("../fonts/Poppins/Poppins-SemiBold.eot") format("eot"), url("../fonts/Poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-SemiBold.ttf") format("ttf"), url("../fonts/Poppins/Poppins-SemiBold.svg") format("svg"), url("../fonts/Poppins/Poppins-SemiBold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins-Medium"), local("Poppins Medium"), url("../fonts/Poppins/Poppins-Medium.eot") format("eot"), url("../fonts/Poppins/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Medium.ttf") format("ttf"), url("../fonts/Poppins/Poppins-Medium.svg") format("svg"), url("../fonts/Poppins/Poppins-Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins-Regular"), local("Poppins Regular"), url("../fonts/Poppins/Poppins-Regular.eot") format("eot"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.ttf") format("ttf"), url("../fonts/Poppins/Poppins-Regular.svg") format("svg"), url("../fonts/Poppins/Poppins-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins-Italic"), local("Poppins Italic"), url("../fonts/Poppins/Poppins-Italic.eot") format("eot"), url("../fonts/Poppins/Poppins-Italic.woff") format("woff"), url("../fonts/Poppins/PoppiItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Italic.ttf") format("ttf"), url("../fonts/Poppins/Poppins-Italic.svg") format("svg"), url("../fonts/Poppins/PoppiItalic.otf") format("otf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Mixed;
+  src: local("Mixed"), url("../fonts/Mixed/Mixed.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  font: var(--default-fz16)/1.625 regular normal Poppins, sans-serif;
+  color: var(--black);
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 510px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 690px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+
+.fz14 {
+  font-size: 14px;
+}
+
+.none {
+  display: none;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --default-fz16: 16px;
+  --fz14: 14px;
+  --white: #fff;
+  --white-link: #B6C197;
+  --bg-cta: #FAFAFA;
+  --bg-footer: #4F553D;
+  --black-add: #4D533C;
+  --black: #213842;
+  --gray-link: #D4D6D4;
+  --orange-link: #FFD723;
+}
+
+.clients {
+  position: relative;
+  left: 160px;
+  top: 0;
+  width: 100%;
+  top: -7em;
+  left: 11.2em;
+  height: 227px;
+  background-color: #fff;
+  box-shadow: 30px 30px 50px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1270px) {
+  .clients {
+    left: 6em;
+  }
+}
+@media (max-width: 1199px) {
+  .clients {
+    top: -5em;
+    left: 9em;
+    height: 10em;
+  }
+}
+.clients__list {
+  position: absolute;
+  left: 3em;
+  display: flex;
+  text-align: center;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+}
+@media (max-width: 1199px) {
+  .clients__list {
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2333333333;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(32px + 47.6 * (100vw - 320px) / 1440);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: calc(32px + 28 * 100vw / 1440);
+  }
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 1.2777777778;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: calc(24px + 20.4 * (100vw - 320px) / 1440);
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: calc(24px + 12 * 100vw / 1440);
+  }
+}
+
+.link-block {
+  position: relative;
+  display: block;
+  color: var(--gray-link);
+  padding-left: 10px;
+}
+.link-block::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 0;
+  transform: translateY(-50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--gray-link);
+}
+.link-block:hover {
+  color: var(--orange-link);
+}
+.link-block:hover::before {
+  border-left-color: var(--orange-link);
+}
+
+.menu {
+  width: 100%;
+}
+.menu__list {
+  display: none;
+}
+@media (min-width: 992px) {
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__list {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+}
+.menu__list li a {
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+@media (max-width: 1023px) {
+  .menu__list li a {
+    font-size: calc(14px + 3.4 * (100vw - 992px) / 1440);
+  }
+}
+@media (min-width: 1024px) {
+  .menu__list li a {
+    font-size: calc(14px + 2 * 100vw / 1440);
+  }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-top: 16px;
+  min-height: 43px;
+}
+@media (max-width: 1199px) {
+  .header {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 200px;
+         column-gap: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__container {
+    -moz-column-gap: 250px;
+         column-gap: 250px;
+  }
+}
+.header .logo__img {
+  display: flex;
+}
+.header .logo__img--triangle {
+  margin-right: 10px;
+}
+@media (max-width: 1199px) {
+  .header .logo__img img {
+    height: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .header .logo__img img {
+    height: 20px;
+  }
+}
+
+.slider {
+  color: var(--white);
+}
+.slider__container {
+  position: relative;
+}
+.slider__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  max-width: 570px;
+  padding: 5px 15px 15px;
+}
+@media (min-width: 992px) {
+  .slider__body {
+    top: 160px;
+  }
+}
+.slider__title {
+  margin: 22px 0 24px;
+}
+.slider__subtitle {
+  margin-bottom: 32px;
+}
+
+.works {
+  background-color: #ccc;
+}/*# sourceMappingURL=main.css.map */

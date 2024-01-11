@@ -1,0 +1,51 @@
+$maxWidth: 1440;
+@mixin adaptive-font_320($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+  @media (min-width: 768px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+@mixin adaptive-font_992($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 1023px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 992px) / #{$maxWidth}));
+  }
+  @media (min-width: 1024px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+h1 {
+  @include adaptive-font_320(60, 32);
+  font-weight: 700;
+  line-height: calc(74 / 60);
+}
+
+h2 {
+  @include adaptive-font_320(36, 24);
+  font-weight: 700;
+  line-height: calc(46 / 36);
+}
+
+// .heading {
+//   font-family: Poppins;
+//   font-weight: 700;
+//   line-height: 1.2;
+//   color: var(--black);
+
+//   &--white {color: var(--white);}
+
+  // &--medium {
+  //   @include adaptive-font (32, 24);  
+  //   font-weight: 700;
+  //   line-height: 1.2;
+  // }
+  // }
+
+  
