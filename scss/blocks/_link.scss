@@ -1,8 +1,21 @@
 .link-block {
   position: relative;
   display: block;
-  color: var(--gray-link);
   padding-left: 10px;
+  font-size: 14px;
+  color: var(--gray-link);
+  // top: 85%;
+  // left: 67%;
+
+  @media (min-width:576px) {
+    // top: 90%;
+    // left: 80%;
+    // position: static;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 
   &::before {
     content: "";

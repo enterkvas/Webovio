@@ -22,13 +22,13 @@ $maxWidth: 1440;
 }
 
 h1 {
-  @include adaptive-font_320(60, 32);
+  @include adaptive-font_320(60, 24);
   font-weight: 700;
   line-height: calc(74 / 60);
 }
 
 h2 {
-  @include adaptive-font_320(36, 24);
+  @include adaptive-font_320(36, 20);
   font-weight: 700;
   line-height: calc(46 / 36);
 }
