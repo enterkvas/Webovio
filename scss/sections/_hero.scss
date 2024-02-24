@@ -2,39 +2,83 @@
   color: var(--white);
   position: relative;
   // text-align: center;
+  // width: 575px;
+  // height: 327px;
+  height: 100%;
+  // background: url("../../img/images/hero-xs.jpg");
+  // background-size: cover;
+  // background-color: var(--black-add);
+
+  // @media (min-width: 576px) {
+  //   background: url("../../img/images/hero-sm.jpg");
+  //   background-size: cover;
+  //   background-color: var(--black-add);    
+  // }
+
+  // &__container {position: relative;}
 
   &__body {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    padding: 15px 0;
-    text-wrap: balance; 
-    top: 15%;
+    padding: 40px 0 12px;
+    // text-wrap: balance; 
+    // top: 20%;
     // top: 50%;
     // left: 50%;
     // margin-right: -50%;
     // transform: translate(-50%, -50%);
 
-    @media (min-width: 410px) {
-      top: 20%;
-      padding-right: 15px
+    @media (min-width: 424px) {
+      padding: 52px 0 12px;
+      max-width: 390px;
     }
 
     @media (min-width: 576px) {
-      top: 15%;
+      padding: 68px 0 12px;
     }
+
+    @media (min-width: 768px) {
+      padding: 104px 0 12px;
+      max-width: 690px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 132px 0 12px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 132px 0 12px;
+      max-width: 690px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 192px 0 12px;
+      max-width: 690px;
+    }
+
   }
 
   &__pretitle {
-    font-size: 12px;
+    margin: 0 0 5px;
+    // font-size: 10px;
+    line-height: 1;
+
+    @media (min-width: 424px) {
+      margin: 0 0 16px;
+    }
 
     @media (min-width: 768px) {
-      font-size: 18px;
+      // font-size: 18px;
     }
   }
 
   &__title {
-    margin: 5px 0;
+    margin: 0 0 5px;
     letter-spacing: 0.5px;
+
+    @media (min-width: 424px) {
+      margin: 0 0 16px;
+    }
 
     @media (min-width: 992px) {
       margin: 24px 0;;
@@ -42,17 +86,42 @@
   }
 
   &__subtitle {
+    max-width: 200px;
     margin-bottom: 12px;
-    font-size: var(--fz14);
+    // font-size: var(--fz14);
     line-height: 1.2;
     letter-spacing: 1px;
+    // text-wrap: balance;
 
-    @media (min-width: 768px) {
-      font-size: 20px;
+    @media (min-width: 424px) {
+      max-width: 270px;
+      margin: 0 0 16px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 576px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 490px;
     }
 
     @media (min-width: 992px) {
       margin-bottom: 32px;
     }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // width: 575px;
+    // height: 327px;
+    // background: url("../../img/images/hero-xs.jpg");
+    // background-size: cover;
+    // background-color: var(--black-add);
   }
 }

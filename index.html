@@ -10,12 +10,21 @@
     <div class="wrapper">
       <header class="page-header header">
         <div class="header__container _container">
-          <div class="header__logo logo">
-            <a href="#" class="logo__img">
-              <img class="logo__img--triangle" src="./img/images/images-logo/triangle.svg" alt="logo">
-              <img class="logo__img--webovio" src="./img/images/images-logo/webovio.svg" alt="logo_1">
-              <!-- <img src="./img/images/images-logo/logo_header.png" alt="logo"> -->
+          <!-- <div> -->
+            <!-- from 320 to 575 -->
+            <a href="#" class="header__logo logo">
+              <!-- <picture"> -->
+                <!-- <source type="image/svg+xml" media="(min-width: 320px)" srcset="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header-xs.svg">
+                <source type="image/svg+xml" media="(min-width: 576px)" srcset="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header-sm.svg">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header-md.svg">
+                <source type="image/svg+xml" media="(min-width: 992px)" srcset="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header-lg.svg">
+                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header-xl.svg"> -->
+                <img  class="logo__img" src="./img/images/images-logo/images-logo-svg/logo_header-svg/logo_header.svg" alt="logo picture">
+              <!-- </picture> -->
             </a>
+          <!-- </div> -->
+          <div class="header__burger burger">
+              <div class="burger__btn"><span></span></div>
           </div>
           <nav class="header__menu menu">
             <ul class="menu__list">
@@ -31,7 +40,7 @@
       <main class="page">
         <div class="page__hero hero">
           <div class="hero__container _container">
-            <!-- from 320 to 767 -->
+            <!-- from 320 to 575 -->
             <div class="hero__body visible-xss">
               <p class="hero__pretitle">A place where</p>
               <h1 class="hero__title">
@@ -44,8 +53,8 @@
                 Get in touch
               </a>
             </div>
-            <!-- from 768 to 991 -->
-            <div class="hero__body hidden-xss">
+            <!--from 576 to 991 -->
+            <!-- <div class="hero__body hidden-xss">
               <p class="hero__pretitle">A place where</p>
               <h1 class="hero__title">
                 A creative agency <br>for redemptive <br>brands
@@ -57,11 +66,31 @@
               <a href="#" class="hero__link link-block">
                 Get in touch
               </a>
+            </div> -->
+			      <!-- from from 992 to 1440 to plus  -->
+            <div class="hero__body visible-lg">
+              <p class="hero__pretitle">A place where</p>
+              <h1 class="hero__title">
+                A creative agency<br> for redemptive<br> brands
+              </h1>
+              <p class="hero__subtitle">
+                Anteelo is a leading strategic design firm that builds powerful
+                digital solutions for startups and enterprises.
+              </p>
+              <a href="#" class="hero__link link-block">
+                Get in touch
+              </a>
             </div>
-          </div>
           <div class="hero__img">
-            <img src="img/images/hero.jpg" alt="cover">
-          </div>          
+            <img src="./img/images/hero-xl.jpg" alt="Hero picture">
+            <!-- <img srcset="./img/images/hero-xs.jpg 400w,
+                          ./img/images/hero-sm.jpg 800w,
+                          ./img/images/hero-md.jpg 1200w"
+                  sizes="(min-width: 1280px) 1200px,
+                          (min-width: 768px) 400px,
+                          100vw"        
+                  src="./img/images/hero-sm.jpg" alt="Hero picture"> -->
+          </div>
         </div>
         <!-- from 768 to 991 -->
         <!-- <div class="page__hero hero"> 
@@ -82,27 +111,12 @@
             <img src="img/images/images_hero/Bitmap.jpg" alt="cover">
           </div>
         </div> -->
-            <!-- from from 992 to 1440 to plus
-            <div class="hero__body visible-lg">
-              <p class="hero__pretitle">A place where</p>
-              <h1 class="hero__title">
-                A creative agency for redemptive brands
-              </h1>
-              <p class="hero__subtitle">
-                Anteelo is a leading strategic design firm that builds powerful
-                digital solutions for startups and enterprises.
-              </p>
-              <a href="#" class="hero__link link-block">
-                Get in touch
-              </a>
-            </div> -->
           <!-- </div> -->
           <!-- <div class="hero__img">
             <img src="img/images/images_hero/Bitmap.jpg" alt="cover">
           </div>
         </div> -->
-        <div class="page__clients clients">
-          <!-- <div class="clients__container _container"> -->
+        <div class="page__clients clients none">
             <ul class="clients__list clients__item">
               <li class="clients__item"><img src="img/icons-clients/andrewPorterLogo.svg" alt="AndrewPorterLogo"></li>
               <li class="clients__item"><img src="img/icons-clients/jalenRoseLogo.svg" alt="JalenRoseLogo"></li>
