@@ -22,7 +22,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    align-items: center;
 
     @media (min-width: 420px) {
       padding-left: 15px;
@@ -40,59 +40,17 @@
 }
 
 .logo {
-  // display: flex;
-  // width: 100%;
-  // height: 20px;
-  // border: 2px solid #faaaaa;
 
   &__img {
-    // display: flex;
-    // height: 12px;
-    // align-items: center;
-    // column-gap: 5px;
-    // width: 320px;
-    // height: 20px;
-    // background: url("../img/images/images-logo/triangle-xs.svg") left no-repeat, url("../img/images/images-logo/webovio-xs.svg") 13% no-repeat;
-    // max-width: 265px;
-    // width: 100%;
-    // display: block;
-    // border: 2px solid gray;
+
     width: 90px;
   
     @media (min-width: 576px) {
       width: 150px;
     }
   
-    // @media (min-width: 768px) {
-    //   height: 40px;
-    //   background: url("../img/images/images-logo/triangle-md.svg") left no-repeat, url("../img/images/images-logo/webovio-md.svg") 40% no-repeat;
-    // }
-  
     @media (min-width: 992px) {
       width: 250px;
     }
-  
-    // @media (min-width: 1199px) {
-    //   height: 25px;
-  
-    //   &--triangle {
-    //     margin-right: 10px;
-    //   }
-    // }
   }  
 }
-
-
-
-  // .logo__img::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 50px;
-  //   top: 50px;
-  //   width: 30px;
-  //   height: 20px;
-  //   background-image: url("data:image/svg+xml; utf8, <svg width='20' height='12' viewBox='0 0 55 36' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M36.6502 30.4842C35.35 32.6512 32.2094 32.6511 30.9092 30.4842L12.7815 0.271275L48.8656 0.271275C51.4676 0.271275 53.0748 3.10989 51.7361 5.34111L36.6502 30.4842Z' fill='#FFD723'/><path fill-rule='evenodd' clip-rule='evenodd' d='M18.1277 30.4842C19.4279 32.6512 22.5685 32.6511 23.8687 30.4842L41.9964 0.271275L5.91239 0.271275C3.31037 0.271275 1.70317 3.10989 3.0419 5.34111L18.1277 30.4842Z' fill='white'/><path fill-rule='evenodd' clip-rule='evenodd' d='M12.7815 0.27124H41.9964L27.39 24.617L12.7815 0.27124Z' fill='#F6F6F6'/></svg>");
-  //   background-size: 100px 100px;
-  // }
-
-  // & img {display: block;}

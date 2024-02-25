@@ -75,7 +75,12 @@ body {
 }
 @media (min-width: 1200px) {
   ._container {
-    max-width: 1080px;
+    max-width: 1020px;
+  }
+}
+@media (min-width: 1440px) {
+  ._container {
+    max-width: 1110px;
   }
 }
 
@@ -383,6 +388,7 @@ h2 {
 
 .hero__pretitle {
   font-weight: 400;
+  line-height: 1.2;
 }
 @media (max-width: 767px) {
   .hero__pretitle {
@@ -427,6 +433,7 @@ h2 {
   position: relative;
   display: block;
   padding-left: 10px;
+  line-height: 1.2;
   color: var(--gray-link);
 }
 .link-block::before {
@@ -497,6 +504,7 @@ h2 {
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 420px) {
   .header__container {
@@ -561,11 +569,12 @@ h2 {
 @media (min-width: 992px) {
   .hero__body {
     padding: 132px 0 12px;
+    max-width: 690px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .hero__body {
-    padding: 132px 0 12px;
+    padding: 152px 0 12px;
     max-width: 690px;
   }
 }
@@ -577,11 +586,15 @@ h2 {
 }
 .hero__pretitle {
   margin: 0 0 5px;
-  line-height: 1;
 }
 @media (min-width: 424px) {
   .hero__pretitle {
     margin: 0 0 16px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__pretitle {
+    margin: 0 0 24px;
   }
 }
 .hero__title {
@@ -593,37 +606,37 @@ h2 {
     margin: 0 0 16px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .hero__title {
-    margin: 24px 0;
+    margin: 0 0 24px;
   }
 }
 .hero__subtitle {
   max-width: 200px;
   margin-bottom: 12px;
-  line-height: 1.2;
   letter-spacing: 1px;
 }
 @media (min-width: 424px) {
   .hero__subtitle {
     max-width: 270px;
     margin: 0 0 16px;
-    line-height: 1.5;
   }
 }
 @media (min-width: 576px) {
   .hero__subtitle {
     max-width: 300px;
+    margin: 0 0 28px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__subtitle {
+    margin: 0 0 36px;
   }
 }
 @media (min-width: 992px) {
   .hero__subtitle {
     max-width: 490px;
-  }
-}
-@media (min-width: 992px) {
-  .hero__subtitle {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
   }
 }
 .hero__img {

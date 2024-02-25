@@ -1,32 +1,12 @@
 .hero {
   color: var(--white);
   position: relative;
-  // text-align: center;
-  // width: 575px;
-  // height: 327px;
   height: 100%;
-  // background: url("../../img/images/hero-xs.jpg");
-  // background-size: cover;
-  // background-color: var(--black-add);
-
-  // @media (min-width: 576px) {
-  //   background: url("../../img/images/hero-sm.jpg");
-  //   background-size: cover;
-  //   background-color: var(--black-add);    
-  // }
-
-  // &__container {position: relative;}
 
   &__body {
     position: relative;
     z-index: 1;
     padding: 40px 0 12px;
-    // text-wrap: balance; 
-    // top: 20%;
-    // top: 50%;
-    // left: 50%;
-    // margin-right: -50%;
-    // transform: translate(-50%, -50%);
 
     @media (min-width: 424px) {
       padding: 52px 0 12px;
@@ -44,10 +24,11 @@
 
     @media (min-width: 992px) {
       padding: 132px 0 12px;
+      max-width: 690px;
     }
 
-    @media (min-width: 992px) {
-      padding: 132px 0 12px;
+    @media (min-width: 1200px) {
+      padding: 152px 0 12px;
       max-width: 690px;
     }
 
@@ -60,15 +41,13 @@
 
   &__pretitle {
     margin: 0 0 5px;
-    // font-size: 10px;
-    line-height: 1;
 
     @media (min-width: 424px) {
       margin: 0 0 16px;
     }
 
     @media (min-width: 768px) {
-      // font-size: 18px;
+      margin: 0 0 24px;
     }
   }
 
@@ -80,35 +59,33 @@
       margin: 0 0 16px;
     }
 
-    @media (min-width: 992px) {
-      margin: 24px 0;;
+    @media (min-width: 768px) {
+      margin: 0 0 24px;
     }
   }
 
   &__subtitle {
     max-width: 200px;
     margin-bottom: 12px;
-    // font-size: var(--fz14);
-    line-height: 1.2;
     letter-spacing: 1px;
-    // text-wrap: balance;
-
+    
     @media (min-width: 424px) {
       max-width: 270px;
       margin: 0 0 16px;
-      line-height: 1.5;
     }
 
     @media (min-width: 576px) {
       max-width: 300px;
+      margin: 0 0 28px;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 0 36px;
     }
 
     @media (min-width: 992px) {
       max-width: 490px;
-    }
-
-    @media (min-width: 992px) {
-      margin-bottom: 32px;
+      margin-bottom: 52px;
     }
   }
 
@@ -118,10 +95,5 @@
     height: 100%;
     top: 0;
     left: 0;
-    // width: 575px;
-    // height: 327px;
-    // background: url("../../img/images/hero-xs.jpg");
-    // background-size: cover;
-    // background-color: var(--black-add);
   }
 }

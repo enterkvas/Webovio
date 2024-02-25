@@ -36,33 +36,15 @@ h2 {
 .hero__pretitle {
   @include adaptive-font_320(14, 9);
   font-weight: 400;
-  // line-height: calc(74 / 60);
+  line-height: 1.2;
 }
 
 .hero__subtitle {
   @include adaptive-font_320(16, 11);
   font-weight: 400;
-  // line-height: calc(74 / 60);
 }
 
 .hero__link {
   @include adaptive-font_320(16, 11);
   font-weight: 700;
-}
-
-// .heading {
-//   font-family: Poppins;
-//   font-weight: 700;
-//   line-height: 1.2;
-//   color: var(--black);
-
-//   &--white {color: var(--white);}
-
-  // &--medium {
-  //   @include adaptive-font (32, 24);  
-  //   font-weight: 700;
-  //   line-height: 1.2;
-  // }
-  // }
-
-  
+}  

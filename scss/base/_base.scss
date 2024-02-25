@@ -38,7 +38,11 @@ body {
 
   @media (min-width:1200px) {
     // max-width: 1140px;
-    max-width: 1080px;
+    max-width: 1020px;
+  }
+
+  @media (min-width:1440px) {
+    max-width: 1110px;
   }
 }
 
