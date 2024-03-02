@@ -1,0 +1,35 @@
+.group {  
+  box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 14.59%);
+
+  &__text {
+    padding: 0 8px 0 24px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-style: italic;
+    line-height: calc(40 / 24);
+    color: var(--black-add);
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  // &__image {
+  //   margin-left: -24px;
+  // }
+
+  &__copyright {
+    margin: 30px 0 0 -40px;
+  }
+
+  &__author {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  &__position {
+    font-size: var(--default-fz16);
+  }
+  
+}

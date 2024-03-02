@@ -31,12 +31,12 @@ h2 {
   @include adaptive-font_320(36, 20);
   font-weight: 700;
   line-height: calc(46 / 36);
+  color: var(--black-add);
 }
 
-.hero__pretitle {
+.pretitle {
   @include adaptive-font_320(14, 9);
   font-weight: 400;
-  line-height: 1.2;
 }
 
 .hero__subtitle {

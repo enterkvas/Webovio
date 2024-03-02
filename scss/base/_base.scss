@@ -46,6 +46,17 @@ body {
   }
 }
 
+p.mainText {
+  font-size: var(--default-fz16);
+  font-weight: 400;
+  color: var(--black)
+}
+
+.pretitle {
+  font-size: var(--fz14);
+  font-weight: 400;
+}
+
 // .visible-md {
 //   @media (max-width: 767px) {
 //     display: none;
@@ -116,15 +127,15 @@ body {
 //   } 
 // }
 
-._ibg {
-  position: relative;
+// ._ibg {
+//   position: relative;
   
-  & img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-}
+//   & img {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     object-fit: cover;
+//   }
+// }
