@@ -314,10 +314,8 @@ legend {
 }
 @media (min-width: 1200px) {
   .clients {
-    position: relative;
-    top: 6em;
-    left: 12.8em;
     height: 227px;
+    transform: translate(12%, 50%);
     background-color: #fff;
     box-shadow: 30px 30px 50px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -326,8 +324,6 @@ legend {
 }
 @media (min-width: 1440px) {
   .clients {
-    top: 6.8em;
-    left: 11em;
     height: 227px;
     background-color: #fff;
     display: flex;
