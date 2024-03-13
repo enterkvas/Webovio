@@ -1,0 +1,17 @@
+.logo {
+
+  // color: #000;
+
+  &__img {
+
+    width: 90px;
+  
+    @media (min-width: 576px) {
+      width: 150px;
+    }
+  
+    @media (min-width: 992px) {
+      width: 250px;
+    }
+  }  
+}

@@ -1,6 +1,6 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
+// @import "../css/slider.css";
 @font-face {
   font-family: Poppins;
   src: local("Poppins-Bold"), 
@@ -88,14 +88,16 @@
 @import "./blocks/clients";
 @import "./blocks/cta";
 @import "./blocks/group";
+@import "./blocks/header";
 @import "./blocks/heading";
 @import "./blocks/link-block";
+@import "./blocks/logo";
 @import "./blocks/menu";
+@import "./blocks/swiper";
 
 @import "./sections/about";
 @import "./sections/analysis";
 @import "./sections/footer";
-@import "./sections/header";
-@import "./sections/hero";
 @import "./sections/services";
+// @import "./sections/slider";
 @import "./sections/works";
