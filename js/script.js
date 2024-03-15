@@ -1,9 +1,9 @@
 // Initializing the Swiper slider:
 const swiper = new Swiper('.swiper', {
-
   // Basic settings:
   direction: 'horizontal',
   loop: true,
+  // Navigation:
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

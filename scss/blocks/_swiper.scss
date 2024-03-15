@@ -1,9 +1,4 @@
 .swiper {
-  display: flex;
-  max-width: 1440px;
-  width: 1440px;
-  height: 810px;
-  margin: 0 auto;
 
   &-wrapper {
     box-sizing: content-box;
@@ -39,4 +34,6 @@
   opacity: 1;
 
   &-active {background-color: #449A5D;}
+
+  @media (min-width: 992px) {display: none;}
 }
