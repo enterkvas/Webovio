@@ -3,19 +3,19 @@
   &-wrapper {
     box-sizing: content-box;
   }
-
           // left arrow and right arrow:
-
   &-button-prev, &-button-next {
     color: var(--white);
+    width: 100px;
+    height: 100px;
   }
 
   &-button-prev {
-    left: 5%;
+    left: 0;
   }
 
   &-button-next {
-    right: 5%;
+    right: 0;
   }
 
   &-button-next:after, &-button-prev:after {
@@ -23,7 +23,6 @@
   }
 }
           // bullets:
-
 .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 30px;
   height: 30px;

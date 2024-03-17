@@ -568,12 +568,14 @@ a.link-block:hover::before {
 }
 .swiper-button-prev, .swiper-button-next {
   color: var(--white);
+  width: 100px;
+  height: 100px;
 }
 .swiper-button-prev {
-  left: 5%;
+  left: 0;
 }
 .swiper-button-next {
-  right: 5%;
+  right: 0;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 80px;
@@ -597,18 +599,10 @@ a.link-block:hover::before {
   }
 }
 
-.page-hero {
-  position: relative;
+.hero {
   color: var(--white);
 }
-.page-hero__swiper {
-  display: flex;
-  max-width: 1440px;
-  width: 1440px;
-  height: 810px;
-  margin: 0 auto;
-}
-.page-hero__container {
+.hero__container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -616,89 +610,97 @@ a.link-block:hover::before {
   right: 0;
   z-index: 1;
 }
+.hero__body {
+  padding: 40px 0 12px;
+}
 @media (min-width: 424px) {
-  .page-hero__body {
+  .hero__body {
     padding: 52px 0 12px;
   }
 }
 @media (min-width: 576px) {
-  .page-hero__body {
+  .hero__body {
     padding: 68px 0 12px;
   }
 }
 @media (min-width: 768px) {
-  .page-hero__body {
+  .hero__body {
     padding: 104px 0 12px;
   }
 }
 @media (min-width: 992px) {
-  .page-hero__body {
+  .hero__body {
     padding: 132px 0 12px;
   }
 }
 @media (min-width: 1200px) {
-  .page-hero__body {
+  .hero__body {
     padding: 152px 0 12px;
   }
 }
 @media (min-width: 1440px) {
-  .page-hero__body {
+  .hero__body {
     padding-top: 180px;
   }
 }
-.page-hero__pretitle {
+.hero__pretitle {
   margin: 0 0 5px;
 }
 @media (min-width: 424px) {
-  .page-hero__pretitle {
+  .hero__pretitle {
     margin: 0 0 16px;
   }
 }
 @media (min-width: 768px) {
-  .page-hero__pretitle {
+  .hero__pretitle {
     margin: 0 0 24px;
   }
 }
-.page-hero__title {
+.hero__title {
   margin: 0 0 5px;
   letter-spacing: 0.5px;
 }
 @media (min-width: 424px) {
-  .page-hero__title {
+  .hero__title {
     margin: 0 0 16px;
   }
 }
 @media (min-width: 768px) {
-  .page-hero__title {
+  .hero__title {
     margin: 0 0 24px;
   }
 }
-.page-hero__subtitle {
+.hero__subtitle {
   max-width: 200px;
   margin-bottom: 12px;
   letter-spacing: 1px;
 }
 @media (min-width: 424px) {
-  .page-hero__subtitle {
+  .hero__subtitle {
     max-width: 270px;
     margin: 0 0 16px;
   }
 }
 @media (min-width: 576px) {
-  .page-hero__subtitle {
+  .hero__subtitle {
     max-width: 300px;
     margin: 0 0 28px;
   }
 }
 @media (min-width: 768px) {
-  .page-hero__subtitle {
+  .hero__subtitle {
     margin: 0 0 36px;
   }
 }
 @media (min-width: 992px) {
-  .page-hero__subtitle {
+  .hero__subtitle {
     max-width: 490px;
     margin-bottom: 52px;
+  }
+}
+@media (min-width: 1441px) {
+  .hero__slide img {
+    min-width: 100%;
   }
 }
 
