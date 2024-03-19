@@ -19,6 +19,10 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--white);
+
+      @media (min-width: 1441px) {
+        font-size: 20px;
+      }
     }
   }
 }

@@ -44,6 +44,9 @@ body {
   @media (min-width:1440px) {
     max-width: 1140px;
   }
+  @media (min-width:1920px) {
+    max-width: 1200px;
+  }
 }
 
 p.maintext {
@@ -52,10 +55,10 @@ p.maintext {
   color: var(--black)
 }
 
-.pretitle {
-  font-size: var(--fz14);
-  font-weight: 400;
-}
+// .pretitle {
+//   font-size: var(--fz14);
+//   font-weight: 400;
+// }
 
 // .visible-md {
 //   @media (max-width: 767px) {

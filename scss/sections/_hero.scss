@@ -7,6 +7,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    max-height: 150px;
     z-index: 1;
   }
 
@@ -37,10 +38,14 @@
       padding-top: 180px;
     }
 
+    @media (min-width: 1920px) {
+      padding-top: 300px;
+    }
   }
 
   &__pretitle {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
+    font-size: 11px;
 
     @media (min-width: 424px) {
       margin: 0 0 16px;
@@ -52,7 +57,7 @@
   }
 
   &__title {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
     letter-spacing: 0.5px;
 
     @media (min-width: 424px) {
@@ -67,6 +72,7 @@
   &__subtitle {
     max-width: 200px;
     margin-bottom: 12px;
+    line-height: 1.2;
     letter-spacing: 1px;
     
     @media (min-width: 424px) {
