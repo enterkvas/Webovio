@@ -3,7 +3,7 @@
   padding: 20px 0;
 
   @media(min-width: 1440px) {
-    padding: 244px 0 20px;
+    padding: 244px 0 0px;
 
     &__row {
       display: flex;
@@ -24,7 +24,7 @@
     }
   
     &__subtitle {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
   
     &__group {
