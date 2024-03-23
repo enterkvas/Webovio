@@ -50,9 +50,12 @@ body {
 }
 
 p.maintext {
-  font-size: var(--default-fz16);
-  font-weight: 400;
-  color: var(--black)
+  font-size: 14px;
+  @media (min-width: 768px) {
+    font-size: var(--default-fz16);
+    font-weight: 400;
+    color: var(--black);
+  }
 }
 
 // .pretitle {
