@@ -16,7 +16,6 @@
 
   &__subtitle {
     margin-bottom: 16px;
-    line-height: 1.2;
     color: rgba(33,56,66, 0.6); 
   }
 
@@ -44,7 +43,7 @@
   @media (min-width: 768px) {
 
     &__text {
-      margin-bottom: 36px;      
+      margin-bottom: 36px;
     }
 
     &__pretitle {
@@ -52,7 +51,7 @@
     }
 
     &__title {
-      margin-bottom: 28px;
+      margin-bottom: 16px;
       text-align: center;
     }
 
@@ -135,6 +134,19 @@
   
     &__subtitle {
       margin-bottom: 40px;
+    }
+  }
+
+  &__group {
+    padding-top: 20px;
+
+    @media (min-width: 768px) {
+      padding: 20px 30px 0;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 240px 30px 0;
+      
     }
   }
 }

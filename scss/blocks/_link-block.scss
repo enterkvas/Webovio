@@ -1,7 +1,9 @@
 a.link-block {
   position: relative;
   display: block;
-  padding-left: 15px;
+  padding-left: 10px;
+  @include adaptive-font_320(16, 11);
+  font-weight: 700;
   color: var(--gray-link);
   text-decoration: underline;
 
