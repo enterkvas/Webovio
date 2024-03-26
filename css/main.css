@@ -38,7 +38,9 @@ html,
 body {
   height: 100%;
   min-width: 320px;
-  font: var(--default-fz16)/1.625 regular normal Poppins, sans-serif;
+  font-size: var(--default-fz16);
+  font-family: Poppins, sans-serif;
+  line-height: 1.4;
   color: var(--black);
 }
 
@@ -450,7 +452,7 @@ legend {
 .group__author {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .group__position {
   font-size: 11px;
@@ -458,26 +460,53 @@ legend {
 }
 @media (min-width: 992px) {
   .group {
-    max-width: 474px;
-    padding: 0 42px;
     box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.1459);
+  }
+  .group__text {
+    padding: 0 30px 0;
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+  .group__copyright {
+    margin: 36px 0 0 -40px;
+  }
+  .group__author {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .group__position {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .group__text {
+    padding: 0 20px 0;
+    font-size: 22px;
+  }
+  .group__author {
+    font-size: 20px;
+  }
+  .group__position {
+    font-size: var(--default-fz16);
   }
 }
 @media (min-width: 1440px) {
   .group__text {
+    padding: 0 30px 0;
     margin-bottom: 36px;
     font-size: 24px;
     line-height: 1.6666666667;
   }
   .group__copyright {
-    margin: 30px 0 0 -40px;
-  }
-  .group__position {
-    font-size: var(--default-fz16);
+    margin: 32px 0 0 -40px;
   }
   .group__author {
     font-size: 22px;
     line-height: 1.5;
+  }
+  .group__position {
+    font-size: var(--default-fz16);
   }
 }
 
@@ -559,12 +588,12 @@ h2 {
 }
 @media (max-width: 767px) {
   h2 {
-    font-size: calc(16px + 34 * (100vw - 320px) / 1440);
+    font-size: calc(18px + 30.6 * (100vw - 320px) / 1440);
   }
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: calc(16px + 20 * 100vw / 1440);
+    font-size: calc(18px + 18 * 100vw / 1440);
   }
 }
 
@@ -588,12 +617,12 @@ h2 {
 }
 @media (max-width: 767px) {
   .subtitle {
-    font-size: calc(11px + 8.5 * (100vw - 320px) / 1440);
+    font-size: calc(14px + 3.4 * (100vw - 320px) / 1440);
   }
 }
 @media (min-width: 768px) {
   .subtitle {
-    font-size: calc(11px + 5 * 100vw / 1440);
+    font-size: calc(14px + 2 * 100vw / 1440);
   }
 }
 @media (min-width: 768px) {
@@ -925,7 +954,6 @@ a.link-block:hover::before {
 .hero__subtitle {
   max-width: 200px;
   margin-bottom: 12px;
-  letter-spacing: 1px;
 }
 @media (min-width: 424px) {
   .hero__subtitle {
@@ -949,7 +977,12 @@ a.link-block:hover::before {
     margin-bottom: 52px;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
+  .hero__subtitle {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1440px) {
   .hero__slide img {
     min-width: 100%;
   }
@@ -992,7 +1025,7 @@ a.link-block:hover::before {
 }
 @media (min-width: 768px) {
   .services__text {
-    margin-bottom: 36px;
+    margin-bottom: 40px;
   }
   .services__pretitle {
     margin-bottom: 20px;
@@ -1011,8 +1044,8 @@ a.link-block:hover::before {
     justify-content: space-between;
   }
   .services__text {
-    max-width: 440px;
-    padding-right: 5px;
+    width: 440px;
+    padding: 150px 5px 0 0;
   }
   .services__pretitle {
     margin-bottom: 24px;
@@ -1026,13 +1059,9 @@ a.link-block:hover::before {
   }
 }
 @media (min-width: 1200px) {
-  .services__row {
-    display: flex;
-    justify-content: space-between;
-  }
   .services__text {
-    max-width: 440px;
-    padding-right: 5px;
+    width: 460px;
+    padding: 150px 5px 0 0;
   }
   .services__pretitle {
     margin-bottom: 24px;
@@ -1053,7 +1082,7 @@ a.link-block:hover::before {
     justify-content: space-between;
   }
   .services__text {
-    max-width: 440px;
+    max-width: 500px;
     padding: 240px 5px 0 0;
   }
   .services__pretitle {
@@ -1067,16 +1096,28 @@ a.link-block:hover::before {
   }
 }
 .services__group {
-  padding-top: 20px;
+  padding: 20px 5px 0;
 }
 @media (min-width: 768px) {
   .services__group {
     padding: 20px 30px 0;
   }
 }
+@media (min-width: 992px) {
+  .services__group {
+    max-width: 375px;
+    padding: 150px 10px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .services__group {
+    max-width: 416px;
+  }
+}
 @media (min-width: 1440px) {
   .services__group {
-    padding: 240px 30px 0;
+    max-width: 470px;
+    padding: 240px 10px 0;
   }
 }
 

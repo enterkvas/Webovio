@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  @include adaptive-font_320(36, 16);
+  @include adaptive-font_320(36, 18);
   font-weight: 700;
   line-height: calc(46 / 36);
   color: var(--black-add);
@@ -40,7 +40,7 @@ h2 {
 }
 
 .subtitle {
-  @include adaptive-font_320(16, 11);
+  @include adaptive-font_320(16, 14);
   font-weight: 400;
   line-height: 1.4;
 

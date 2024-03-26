@@ -71,7 +71,6 @@
   &__subtitle {
     max-width: 200px;
     margin-bottom: 12px;
-    letter-spacing: 1px;
     
     @media (min-width: 424px) {
       // max-width: 270px;
@@ -91,12 +90,16 @@
       max-width: 490px;
       margin-bottom: 52px;
     }
+
+    @media (min-width: 1440px) {
+      max-width: 550px;
+    }
   }
 
   &__slide {
     & img {
 
-      @media (min-width: 1441px) {
+      @media (min-width: 1440px) {
         min-width: 100%;
       }
     }
