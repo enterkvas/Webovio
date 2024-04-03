@@ -37,6 +37,7 @@
 3) Планшет: во 2-м ряду 2-я колонка уходит вниз (под ней - logo - ниже - копирайт). 
 4) тлф: полная кастомизация (сокращение кол-ва контента и перестроение).
 2.1.10 Сделать слайдер - слайдером (стрелки, пагинацию).
+2.1.11 Между секциями: services/.../../ присутствует разделительная полоса: color: rgba(33, 56, 66, 0.1);
 
 Первые впечатления от Pass 1:
 1) Дизайн достаточно "воздушный" и удобный для чтения.
@@ -173,7 +174,7 @@
   - main
     - slider (section)
     - clients (block)
-    - whatWeDo (section)
+    - services (section)
     - Works (section)
     - Analysis (section)
     - CTA (section)
@@ -200,7 +201,7 @@
     - clients (block)
       - Unordered list
 -----------------------------
-    - WhatWeDo (section)(_about.scss)
+    - services (section)(_about.scss)
       - Column 
         - header-block
           - Title

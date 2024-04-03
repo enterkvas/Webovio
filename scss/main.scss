@@ -73,7 +73,6 @@
 
 @font-face {
   font-family: Mixed;
-  // src: url("https://fontsforyou.com/fonts/m/Mixed.ttf");
   src: local("Mixed"), 
     url("../fonts/Mixed/Mixed.ttf") format("ttf");
   font-weight: 700;
@@ -85,6 +84,7 @@
 @import "./base/var";
 
 @import "./blocks/burger-btn";
+@import "./blocks/card";
 @import "./blocks/clients";
 @import "./blocks/cta";
 @import "./blocks/group";
@@ -100,5 +100,4 @@
 @import "./sections/footer";
 @import "./sections/hero";
 @import "./sections/services";
-// @import "./sections/slider";
 @import "./sections/works";

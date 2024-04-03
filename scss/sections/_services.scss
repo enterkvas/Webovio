@@ -1,5 +1,10 @@
 .services {
   padding: 16px 0 0;
+  
+  &__container {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(33, 56, 66, 0.1);
+  }
 
   &__text {
     margin-bottom: 20px;
@@ -110,15 +115,20 @@
 
   @media(min-width: 1440px) {
     padding: 0;
+    
+    &__container {
+      padding-bottom: 140px;
+    }
 
     &__row {
       display: flex;
-      justify-content: space-between;
     }
   
     &__text {
+      flex-grow: 1;
       max-width: 500px;
-      padding: 240px 5px 0 0;
+      padding: 244px 5px 0 0;
+      margin-bottom: 0;
     }
   
     &__pretitle {
@@ -130,29 +140,24 @@
     }
   
     &__subtitle {
+      width: 475px;
       margin-bottom: 40px;
     }
   }
 
   &__group {
-    padding: 20px 5px 0;
 
     @media (min-width: 768px) {
       padding: 20px 30px 0;
     }
 
     @media (min-width: 992px) {
-      max-width: 375px;
       padding: 150px 10px 0;
     }
-
-    @media (min-width: 1200px) {
-      max-width: 416px;
-    }
-
+    
     @media (min-width: 1440px) {
-      max-width: 470px;
-      padding: 240px 10px 0;      
+      padding: 244px 8px 52px 40px;
+      max-width: 474px;
     }
   }
 }

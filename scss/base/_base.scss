@@ -39,7 +39,6 @@ body {
   }
 
   @media (min-width:1200px) {
-    // max-width: 1140px;
     max-width: 1020px;
   }
 
@@ -51,6 +50,8 @@ body {
   }
 }
 
+p {margin-bottom: 1rem;}
+
 p.maintext {
   font-size: 14px;
   @media (min-width: 768px) {
@@ -59,17 +60,6 @@ p.maintext {
     color: var(--black);
   }
 }
-
-// .pretitle {
-//   font-size: var(--fz14);
-//   font-weight: 400;
-// }
-
-// .visible-md {
-//   @media (max-width: 767px) {
-//     display: none;
-//   }
-// }
 
 .visible-xss,
 .visible-xs,
@@ -87,6 +77,8 @@ p.maintext {
   .visible-lg {display: block !important;}
 }
 
+.none {display: none !important;}
+
 // @media (min-width: 768px) and (max-width: 991px) {
 //   .visible-sm {
 //     display: block !important;
@@ -96,7 +88,6 @@ p.maintext {
 //   }
 // }
 
-.none {display: none !important;}
 
 // .subtitle-white {color: var(--white);}
 
