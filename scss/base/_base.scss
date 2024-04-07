@@ -50,7 +50,17 @@ body {
   }
 }
 
-p {margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 1.5rem;
+  }
+}
 
 p.maintext {
   font-size: 14px;

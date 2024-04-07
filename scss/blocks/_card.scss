@@ -21,7 +21,7 @@
     }
 
     &__subtitle {
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
 
     // &__link {
@@ -30,11 +30,13 @@
 
     &__group {
       position: absolute;
-      width: 453px;
+      max-width: 453px;
+      padding: 30px 33px 30px 30px;
+
       // height: 243px;
-      bottom: -90px;
-      left: 60px;
-      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1459);
+      bottom: -12%;
+      left: 23%;
+      // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1459);
 
     }
   } 
@@ -51,8 +53,4 @@
       // width: 100px;
       // object-fit: contain;
     // }
-  
-  
-  .card__subtitle {
-  }
 }

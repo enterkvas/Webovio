@@ -27,14 +27,14 @@ h1 {
   line-height: calc(74 / 60);
 }
 
-@media (min-width: 1440px) {
+
   h2 {
-    @include adaptive-font_320(36, 18);
-    font-weight: 700;
-    line-height: calc(46 / 36);
-    color: var(--black-add);
+    @media (min-width: 1440px) {
+      @include adaptive-font_320(36, 18);
+      font-weight: 700;
+      color: var(--black-add);
+    }
   }
-}
 
 .pretitle {
   @include adaptive-font_320(14, 9);
@@ -49,6 +49,10 @@ h1 {
 
   @media (min-width: 768px) {
     line-height: 1.6;
+  }
+
+  @media (min-width: 1440px) {
+    line-height: calc(26 / 16);
   }
 }
 

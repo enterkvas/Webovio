@@ -3,40 +3,27 @@
   @media (min-width: 1440px) {
     padding: 170px 0 170px;
   }
-}
-.works {
-}
-.works__container {
-}
-.works__heading {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 7rem;
 
-  margin-bottom: 5rem;
-}
-.works__title {
-  width: 325px;
-}
-.works__subtitle {
-  @media (min-width: 1440px) {
-    width: 518px;    
+  &__heading {
+    display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    column-gap: 8rem;
+    margin-bottom: 104px;
   }
-}
-.works__row {
-}
-.works__col {
-}
-.works__card {
-}
-.card {
-}
-.card__image {
-}
-.card__heading {
-}
-.card__title {
-}
-.card__subtitle {
+  &__title {
+    width: 325px;
+  }
+  &__subtitle {
+    @media (min-width: 1440px) {
+      width: 518px;
+      padding: 12px 0 0;    
+    }
+  }
+
+  &__group-small {
+    @media (min-width: 1440px) {
+      padding: 30px 33px 30px 30px;
+    }
+  }
 }
