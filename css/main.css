@@ -1,3 +1,4 @@
+@import "../css/var.css";
 @font-face {
   font-family: Poppins;
   src: local("Poppins-Bold"), local("Poppins Bold"), url("../fonts/Poppins/Poppins-Bold.eot") format("eot"), url("../fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Bold.ttf") format("ttf"), url("../fonts/Poppins/Poppins-Bold.svg") format("svg"), url("../fonts/Poppins/Poppins-Bold.otf") format("otf");
@@ -226,20 +227,6 @@ legend {
   display: block;
 }
 
-:root {
-  --black:
-  --default-fz16: 16px;
-  --fz14: 14px;
-  --white: #fff;
-  --white-link: #B6C197;
-  --bg-cta: #FAFAFA;
-  --bg-footer: #4F553D;
-  --black-add: #4D533C;
-  --black-submit: rgba(33,56,66,0.6);
-  --gray-link: #D4D6D4;
-  --orange-link: #FFD723;
-}
-
 .burger {
   position: relative;
   background-color: #F5F6F7;
@@ -334,25 +321,22 @@ legend {
   display: flex;
 }
 @media (min-width: 1440px) {
-  .card__image {
-    display: flex;
-  }
   .card__heading {
     width: 50%;
-    padding: 5rem 11rem 1rem 7rem;
+    padding: 5rem 12rem 1rem 5.5rem;
   }
   .card__title {
     margin-bottom: 2rem;
   }
   .card__subtitle {
-    margin-bottom: 6rem;
+    margin-bottom: 5.5rem;
   }
   .card__group {
     position: absolute;
     max-width: 453px;
     padding: 30px 33px 30px 30px;
     bottom: -12%;
-    left: 23%;
+    left: 22.5%;
   }
 }
 
@@ -587,7 +571,7 @@ legend {
 }
 @media (min-width: 1440px) {
   .group-small__text {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     font-size: var(--default-fz16);
     font-style: italic;
     line-height: 1.625;
@@ -595,6 +579,9 @@ legend {
   .group-small__footer {
     display: flex;
     background-color: var(--white);
+  }
+  .group-small__copyright {
+    padding-top: 8px;
   }
   .group-small__author {
     margin-bottom: 8px;
@@ -1230,8 +1217,8 @@ a.link-block:hover::before {
 }
 .works__heading {
   display: flex;
-  -moz-column-gap: 8rem;
-       column-gap: 8rem;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
   margin-bottom: 104px;
 }
 .works__title {
@@ -1242,6 +1229,11 @@ a.link-block:hover::before {
     width: 518px;
     padding: 12px 0 0;
   }
+}
+.works__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
 }
 @media (min-width: 1440px) {
   .works__group-small {

@@ -149,7 +149,7 @@
   @media (min-width: 1440px) {
     
     &__text {
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       font-size: var(--default-fz16);
       font-style: italic;
       line-height: calc(26 / 16);
@@ -161,7 +161,7 @@
     }
 
     &__copyright {
-      // margin: 32px 0 0 -40px;
+      padding-top: 8px;
     }
 
     &__author {

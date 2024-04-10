@@ -8,7 +8,7 @@
     display: flex;
     // justify-content: flex-start;
     // align-items: center;
-    column-gap: 8rem;
+    column-gap: 7rem;
     margin-bottom: 104px;
   }
   &__title {
@@ -19,6 +19,12 @@
       width: 518px;
       padding: 12px 0 0;    
     }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
   }
 
   &__group-small {
